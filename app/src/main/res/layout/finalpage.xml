@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:layout_centerHorizontal="true"
+        android:minWidth="200dp"
+        android:maxHeight="30dp"
+        android:paddingTop="10dp"
+        android:progress="10" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="10/10"
+        android:textSize="23dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="23dp"
+        android:layout_below="@id/progressBar2"
+        android:text="Total marks" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="23dp"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/progressBar2"
+        android:text="10" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="23dp"
+
+        android:layout_below="@id/textView2"
+        android:text="Question and Correct Answer:" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/card_view_recycler_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>
